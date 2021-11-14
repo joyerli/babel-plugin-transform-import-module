@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`允许导出 1`] = `
+"console.log(Element);
+export { default } from 'element-ui';"
+`;
+
+exports[`别名 1`] = `
+"import alert from \\"element-ui/lib/alert\\";
+import \\"path/to/alert.css\\";
+console.log(alert);"
+`;
+
+exports[`别名跟普通导入 1`] = `
+"import alert from \\"element-ui/lib/alert\\";
+import \\"path/to/alert.css\\";
+import Button from \\"element-ui/lib/button\\";
+import \\"path/to/button.css\\";
+console.log(alert, Button);"
+`;
+
+exports[`命令空间导入 1`] = `
+"import * as Element from 'element-ui';
+console.log(Element);"
+`;
+
+exports[`多行导入 1`] = `
+"import Alert from \\"element-ui/lib/alert\\";
+import \\"path/to/alert.css\\";
+import Button from \\"element-ui/lib/button\\";
+import \\"path/to/button.css\\";
+console.log(alert, Button);"
+`;
+
+exports[`导入单个el组件 1`] = `
+"import Button from \\"element-ui/lib/button\\";
+import \\"path/to/button.css\\";
+console.log(Button);"
+`;
+
+exports[`导入多个组件 1`] = `
+"import Alert from \\"element-ui/lib/alert\\";
+import \\"path/to/alert.css\\";
+import Button from \\"element-ui/lib/button\\";
+import \\"path/to/button.css\\";
+console.log(Alert, Button);"
+`;
+
+exports[`导入文件 1`] = `
+"import 'element-ui';
+console.log('=====');"
+`;
+
+exports[`禁止全局导入之命令空间导入 1`] = `
+" Not allowed import all module
+[0m [90m 1 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m      [36mimport[39m [33mElement[39m from [32m'element-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m    [0m"
+`;
+
+exports[`禁止全局导入之导入文件 1`] = `
+" Not allowed import all module
+[0m [90m 1 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m      [36mimport[39m [33mElement[39m from [32m'element-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m    [0m"
+`;
+
+exports[`禁止全局导入之默认导入 1`] = `
+" Not allowed import all module
+[0m [90m 1 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m      [36mimport[39m [33m*[39m as [33mElement[39m from [32m'element-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m      console[33m.[39mlog([33mElement[39m)[33m;[39m[0m
+[0m [90m 4 | [39m    [0m"
+`;
+
+exports[`禁止导出 1`] = `
+" Not allowed due to preventExport setting
+[0m [90m 1 | [39m[0m
+[0m [90m 2 | [39m      console[33m.[39mlog([33mElement[39m)[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m      [36mexport[39m { [36mdefault[39m } from [32m'element-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m      [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m    [0m"
+`;
+
+exports[`默认导入 1`] = `
+"import * as Element from 'element-ui';
+console.log(Element);"
+`;
